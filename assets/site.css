@@ -27,10 +27,15 @@ p, ul { margin-top: 8px; }
 li + li { margin-top: 7px; }
 .meta { color: #56645f; font-size: .92rem; }
 .contact { display: inline-block; margin-top: 4px; padding: 10px 15px; border-radius: 12px; background: #eaf4ef; font-weight: 650; text-decoration: none; }
-.language { display: flex; gap: 14px; margin-top: 18px; font-size: .9rem; }
-.language a { color: #fff; }
+.language-picker { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 18px; font-size: .9rem; }
+.language-picker select { max-width: 100%; padding: 8px 12px; border: 1px solid #ffffff66; border-radius: 10px; color: #183d36; background: #fff; font: inherit; }
+.locale summary { color: #183d36; font-weight: 700; cursor: pointer; }
+.locale[open] summary { margin-bottom: 16px; }
+.locale h2 { margin-top: 10px; }
+.locale[dir="rtl"] { text-align: right; }
+.locale[dir="rtl"] summary { text-align: right; }
 footer { padding: 0 0 30px; color: #66736e; font-size: .88rem; }
-footer a { margin-right: 16px; }
+footer { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 @media (max-width: 560px) {
   header { align-items: flex-start; flex-direction: column; }
   .hero { padding: 25px 22px; }
